@@ -22,31 +22,31 @@ if [[ "$DIGIT1" =~ ^[0-9]+$ ]] && [[ "$DIGIT2" =~ ^[0-9]+$ ]] ; then
   case $OPERATION in
   
     1)
-      addanswer=$(($DIGIT1+$DIGIT2))
+      answer=$(($DIGIT1+$DIGIT2))
       echo ""
 
-      echo "Answer is " $addanswer
+      echo "Answer is " $answer
       ;;
 
     2)
-      subanswer=$(($DIGIT1-$DIGIT2))
+      answer=$(($DIGIT1-$DIGIT2))
       echo ""
 
-      echo "Answer is " $subanswer
+      echo "Answer is " $answer
       ;;
 
     3)
-      multianswer=$(($DIGIT1*$DIGIT2))
+      answer=$(($DIGIT1*$DIGIT2))
       echo ""
 
-      echo "Answer is " $multianswer
+      echo "Answer is " $answer
       ;;
 
     4)
-      divanswer=$(($DIGIT1/$DIGIT2))
+      answer=$(($DIGIT1/$DIGIT2))
       echo ""
 
-      echo "Answer is " $divanswer
+      echo "Answer is " $answer
       ;;
 
     *)
